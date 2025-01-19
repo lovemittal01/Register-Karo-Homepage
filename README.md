@@ -39,26 +39,26 @@ The project is organized as follows:
 ```
 src/
   components/
-    discount.js
-    navbar.js
-    hero-section.js
-    trusted.js
-    services.js
-    about.js
-    choose-us.js
-    video-intro.js
-    happy-clients.js
-    steps.js
-    blogs.js
-    testimonials.js
-    faq.js
-    mobile-app.js
-    important-numbers.js
-    email.js
-    companies.js
-    footer.js
+    discount/index.jsx
+    navbar/index.jsx
+    hero-section/index.jsx
+    trusted/index.jsx
+    services/index.jsx
+    about/index.jsx
+    choose-us/index.jsx
+    video-intro/index.jsx
+    happy-clients/index.jsx
+    steps/index.jsx
+    blogs/index.jsx
+    testimonials/index.jsx
+    faq/index.jsx
+    mobile-app/index.jsx
+    important-numbers/index.jsx
+    email/index.jsx
+    companies/index.jsx
+    footer/index.jsx
   pages/
-    home-page.js
+    HomePage.jsx
 ```
 
 ## HomePage Component
