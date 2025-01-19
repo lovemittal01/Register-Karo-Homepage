@@ -12,9 +12,7 @@ const Footer = () => {
         className="bg-[#011b5b] text-[#aab5cd] py-16"
         style={{ fontFamily: '"Inter", serif' }}
       >
-        {/* Main Sections */}
         <div className=" px-5 md:px-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
-          {/* Section 1 */}
           <div>
             <p className="mb-4 font-medium text-[16px] lg:w-[200px]">
               Design outstanding interfaces with advanced Figma features in a
@@ -28,7 +26,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Section 2 */}
           <div>
             <h3 className="text-[16px] font-bold mb-4 text-[#ffa229]">
               START A
@@ -42,7 +39,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Section 3 */}
           <div>
             <h3 className="text-[16px] font-bold mb-4 text-[#ffa229]">
               GOVERNM
@@ -56,7 +52,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Section 4 */}
           <div>
             <h3 className="text-[16px] font-bold mb-4 text-[#ffa229]">
               COMPLIANCE & T
@@ -69,7 +64,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Section 5 */}
           <div>
             <h3 className="text-[16px] font-bold mb-4 text-[#ffa229]">
               BIS & CDS
@@ -83,7 +77,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Section */}
         <div className="mt-16 pt-8">
           <div className="flex flex-col items-center text-center space-y-4">
             <img src={bottom} alt="Bottom Icon" className="w-12 h-12" />

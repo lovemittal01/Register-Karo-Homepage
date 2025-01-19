@@ -19,7 +19,6 @@ const Navbar = () => {
         className="bg-white text-[#272d37] px-6 md:px-20 h-[72px] flex items-center justify-between"
         style={{ fontFamily: '"Open Sans", serif' }}
       >
-        {/* Logo */}
         <div className="relative flex items-center">
           <div className="relative">
             <img
@@ -31,7 +30,6 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Desktop Menu */}
         <div className="hidden md:flex md:gap-3 lg:gap-7 items-center">
           <div className="flex font-semibold md:gap-6 lg:gap-16">
             <div>Home</div>
@@ -53,7 +51,6 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Hamburger Menu Icon */}
         <div
           className="md:hidden text-2xl cursor-pointer"
           onClick={toggleMobileMenu}
@@ -62,7 +59,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white text-[#272d37] p-6 space-y-4 font-semibold">
           <div>Home</div>

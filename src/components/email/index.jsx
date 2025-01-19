@@ -2,25 +2,22 @@ import React, { useState } from "react";
 import tick from "../../assets/email/Align to Text.svg";
 
 const Email = () => {
-  const [email, setEmail] = useState(""); // State to hold the email input
-  const [message, setMessage] = useState(""); // State for success/error message
-
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const handleSubmit = () => {
     if (email.trim() === "") {
       setMessage("Please enter a valid email.");
       return;
     }
 
-    // Example email validation (can be replaced with a more robust regex)
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       setMessage("Invalid email format.");
       return;
     }
 
-    // Simulate submission or API call
     setMessage("Thank you! Your email has been submitted.");
-    setEmail(""); // Clear the input field after submission
+    setEmail("");
   };
 
   return (
@@ -47,20 +44,20 @@ const Email = () => {
               style={{
                 fontWeight: "400",
                 fontSize: "15px",
-                color: "black", // Ensures text is visible
-                backgroundColor: "white", // Optional, makes input field stand out
+                color: "black",
+                backgroundColor: "white",
               }}
-              value={email} // Controlled input
-              onChange={(e) => setEmail(e.target.value)} // Update state on change
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
             <div
               className="bg-[#ffa229] font-semibold text-[15px] p-3 px-5 rounded-r-[4px] text-center cursor-pointer"
-              onClick={handleSubmit} // Call handleSubmit on click
+              onClick={handleSubmit}
             >
               Submit
             </div>
           </div>
-          {message && ( // Display success/error message
+          {message && (
             <div
               className="mt-2 text-[12px] md:text-[14px]"
               style={{ color: message.includes("Thank you") ? "#0f0" : "#f00" }}

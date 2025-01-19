@@ -36,9 +36,8 @@ const About = () => {
           </div>
         </div>
         <div className="relative h-[300px] md:h-[442px]">
-          {/* Icon */}
           <img src={icon1} className="h-full relative z-10" />
-          {/* Background Elements */}
+
           <img
             src={photo}
             className="absolute top-60 md:top-80 right-[-20px] md:right-[-70px] w-[70px] md:w-[120px] z-0"

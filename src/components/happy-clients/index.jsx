@@ -9,7 +9,6 @@ const HappyClients = () => {
         className="bg-[#fafafa] flex flex-col items-center justify-center  md:gap-10 py-10 md:py-20  "
         style={{ fontFamily: '"Inter", serif' }}
       >
-        {/* Header Section */}
         <div className="flex flex-col gap-5 justify-center items-center text-center px-4 md:px-8">
           <div className="text-[#272d37] font-bold text-[24px] md:text-[32px]">
             Our Happy Clients
@@ -21,7 +20,6 @@ const HappyClients = () => {
           </div>
         </div>
 
-        {/* Image Section */}
         <div className="w-full flex justify-center">
           <img
             src={pagination}
@@ -30,7 +28,6 @@ const HappyClients = () => {
           />
         </div>
 
-        {/* Footer Section */}
         <div className="flex gap-2 md:gap-3 items-center text-[13px] md:text-[15px]">
           <div className="font-semibold">Show more</div>
           <div>

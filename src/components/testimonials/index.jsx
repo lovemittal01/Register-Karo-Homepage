@@ -31,8 +31,8 @@ const Testimonials = () => {
     },
   ];
 
-  const visibleSlides = 2.5; // Number of slides visible at a time
-  const slideWidth = 100 / testimonials.length; // Calculate slide width percentage
+  const visibleSlides = 2.5;
+  const slideWidth = 100 / testimonials.length;
   const maxSlideIndex = testimonials.length - Math.ceil(visibleSlides);
 
   const handlePrev = () => {
@@ -48,7 +48,6 @@ const Testimonials = () => {
       className="bg-[#1c4670] h-auto px-6 md:px-20 py-10 flex flex-col justify-between"
       style={{ fontFamily: '"Inter", serif' }}
     >
-      {/* Header */}
       <div className="flex justify-between items-center">
         <div className="text-[16px] md:text-[32px] text-white font-bold">
           What peoples says about us
@@ -69,7 +68,6 @@ const Testimonials = () => {
         </div>
       </div>
 
-      {/* Carousel */}
       <div className="overflow-hidden w-full relative mt-6">
         <div
           className="flex transition-transform duration-500"
@@ -83,7 +81,7 @@ const Testimonials = () => {
               key={index}
               className="px-3 md:px-5"
               style={{
-                flex: `0 0 ${slideWidth}%`, // Set width based on slide width
+                flex: `0 0 ${slideWidth}%`,
               }}
             >
               <div className="w-[320px] md:w-[520px] h-[280px] md:h-[318px] px-[15px] md:px-[20px] py-[20px] md:py-[25px] flex flex-col justify-between bg-white border border-[#fcddec] rounded-[10px] mx-auto">
@@ -115,7 +113,6 @@ const Testimonials = () => {
         </div>
       </div>
 
-      {/* Dots */}
       <div className="flex justify-center mt-6 gap-2">
         {testimonials.map((_, index) => (
           <div
