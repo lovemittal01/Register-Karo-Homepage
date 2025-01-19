@@ -19,19 +19,9 @@ import Companies from "../components/companies";
 import Footer from "../components/footer";
 
 const HomePage = () => {
-  const pageWrapperStyle = {
-    overflowY: "auto",
-    height: "100vh",
-    scrollbarWidth: "none",
-  };
   return (
     <>
-      <div
-        style={{
-          ...pageWrapperStyle,
-          msOverflowStyle: "none",
-        }}
-      >
+      <div>
         <Discount />
         <Navbar />
         <HeroSection />
